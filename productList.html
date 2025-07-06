@@ -105,16 +105,46 @@
             color: #b59f00;
             border: 1px solid #f7e7a7;
         }
+        .description {
+            max-width: 700px;
+            margin: 0 auto 2em auto;
+            background: #f3f5f7;
+            border: 1px solid #e3e6ea;
+            border-radius: 8px;
+            padding: 1.1em 1.5em;
+            font-size: 1.04em;
+            color: #4b5563;
+            text-align: left;
+            line-height: 1.7;
+            box-sizing: border-box;
+        }
+        .description-plain {
+            max-width: 700px;
+            margin: 0.5em auto 2em auto;
+            font-size: 0.98em;
+            color: #6b7280;
+            font-style: italic;
+            font-weight: 400;
+            text-align: left;
+            line-height: 1.6;
+            background: none;
+            border: none;
+            padding: 0;
+        }
         @media (max-width: 600px) {
             body { margin: 0.5em; }
             h1 { font-size: 1.3em; }
             summary { font-size: 1em; }
             .subcategory { margin-left: 0.5em; padding-left: 0.5em; }
+            .description { padding: 0.7em 0.7em; font-size: 0.98em; }
         }
     </style>
 </head>
 <body>
     <h1>Consumer Neuromodulation Devices</h1>
+    <div class="description-plain">
+        The devices' classification was made following the evaluation of its claims, supporting evidence and risk. It is based on 4 main criteria: <b>Imprecision</b> (Suggests uncertainty about the product), <b>Indirectness</b>, <b>Limitations of detailed design and execution</b> (Reduces confidence that the results reflect the true effect), and <b>Inconsistency</b> (trust), which are modified GRADE classification factors for evaluating quality of evidence.
+    </div>
 
     <details>
         <summary>Transcranial direct current stimulation (tDCS)</summary>
@@ -139,30 +169,54 @@
     <details>
         <summary>Transcranial alternating current stimulation (tACS)</summary>
         <div class="subcategory">
-            <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
-            <details><summary>MOOD</summary></details>
-            <details><summary>NEUROLOGICAL</summary></details>
+            <details>
+                <summary>COGNITIVE</summary>
+            </details>
+            <details>
+                <summary>PHYSIOLOGICAL</summary>
+            </details>
+            <details>
+                <summary>MOOD</summary>
+            </details>
+            <details>
+                <summary>NEUROLOGICAL</summary>
+            </details>
         </div>
     </details>
 
     <details>
         <summary>Transcranial magnetic stimulation (TMS)</summary>
         <div class="subcategory">
-            <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
-            <details><summary>MOOD</summary></details>
-            <details><summary>NEUROLOGICAL</summary></details>
+            <details>
+                <summary>COGNITIVE</summary>
+            </details>
+            <details>
+                <summary>PHYSIOLOGICAL</summary>
+            </details>
+            <details>
+                <summary>MOOD</summary>
+            </details>
+            <details>
+                <summary>NEUROLOGICAL</summary>
+            </details>
         </div>
     </details>
 
     <details>
         <summary>Transcranial ultrasound stimulation (TUS/FUS)</summary>
         <div class="subcategory">
-            <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
-            <details><summary>MOOD</summary></details>
-            <details><summary>NEUROLOGICAL</summary></details>
+            <details>
+                <summary>COGNITIVE</summary>
+            </details>
+            <details>
+                <summary>PHYSIOLOGICAL</summary>
+            </details>
+            <details>
+                <summary>MOOD</summary>
+            </details>
+            <details>
+                <summary>NEUROLOGICAL</summary>
+            </details>
         </div>
     </details>
 
@@ -189,41 +243,73 @@
     <details>
         <summary>Random noise stimulator (RNS)</summary>
         <div class="subcategory">
-            <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
-            <details><summary>MOOD</summary></details>
-            <details><summary>NEUROLOGICAL</summary></details>
+            <details>
+                <summary>COGNITIVE</summary>
+            </details>
+            <details>
+                <summary>PHYSIOLOGICAL</summary>
+            </details>
+            <details>
+                <summary>MOOD</summary>
+            </details>
+            <details>
+                <summary>NEUROLOGICAL</summary>
+            </details>
         </div>
     </details>
 
     <details>
         <summary>Portable neuromodulation stimulator (PoNS)</summary>
         <div class="subcategory">
-            <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
-            <details><summary>Helius Medical Technologies</summary></details>
-            <details><summary>MOOD</summary></details>
-            <details><summary>NEUROLOGICAL</summary></details>
+            <details>
+                <summary>COGNITIVE</summary>
+            </details>
+            <details>
+                <summary>PHYSIOLOGICAL</summary>
+                <div>Helius Medical Technologies</div>
+            </details>
+            <details>
+                <summary>MOOD</summary>
+            </details>
+            <details>
+                <summary>NEUROLOGICAL</summary>
+            </details>
         </div>
     </details>
 
     <details>
         <summary>Photobiomodulation (PBM)</summary>
         <div class="subcategory">
-            <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
-            <details><summary>MOOD</summary></details>
-            <details><summary>NEUROLOGICAL</summary></details>
+            <details>
+                <summary>COGNITIVE</summary>
+            </details>
+            <details>
+                <summary>PHYSIOLOGICAL</summary>
+            </details>
+            <details>
+                <summary>MOOD</summary>
+            </details>
+            <details>
+                <summary>NEUROLOGICAL</summary>
+            </details>
         </div>
     </details>
 
     <details>
         <summary>Temporal interference (TI)</summary>
         <div class="subcategory">
-            <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
-            <details><summary>MOOD</summary></details>
-            <details><summary>NEUROLOGICAL</summary></details>
+            <details>
+                <summary>COGNITIVE</summary>
+            </details>
+            <details>
+                <summary>PHYSIOLOGICAL</summary>
+            </details>
+            <details>
+                <summary>MOOD</summary>
+            </details>
+            <details>
+                <summary>NEUROLOGICAL</summary>
+            </details>
         </div>
     </details>
 
