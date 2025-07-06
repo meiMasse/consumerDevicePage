@@ -2,42 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Neuromodulation Devices List</title>
+    <title>Consumer Neuromodulation Devices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 2em; }
-        details { margin-bottom: 1em; }
-        summary { font-weight: bold; font-size: 1.1em; cursor: pointer; }
-        ul { margin-top: 0.5em; }
-        .note { color: #b00; font-size: 0.95em; margin-left: 1em; }
-        a { color: #0645ad; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .subcategory summary { font-size: 1em; font-weight: normal; }
-        .subcategory { margin-left: 1.5em; margin-bottom: 0.5em; }
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            margin: 2em;
+            background: #f7f8fa;
+            color: #2d2d2d;
+        }
+        h1 {
+            text-align: center;
+            color: #5a6c7a;
+            letter-spacing: 1px;
+            margin-bottom: 2em;
+            font-weight: 700;
+        }
+        details {
+            margin-bottom: 1.2em;
+            border-radius: 8px;
+            background: #fff;
+            border: 1px solid #e3e6ea;
+        }
+        summary {
+            font-weight: 600;
+            font-size: 1.13em;
+            cursor: pointer;
+            padding: 0.8em 1.2em;
+            outline: none;
+            background: #f3f5f7;
+            border-radius: 8px 8px 0 0;
+            color: #5a6c7a;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        }
+        details[open] > summary {
+            background: #e9ecef;
+            color: #3d4a56;
+        }
+        .subcategory {
+            margin-left: 1.5em;
+            margin-bottom: 0.5em;
+            border-left: 2px solid #e3e6ea;
+            padding-left: 1em;
+        }
+        .subcategory details {
+            background: none;
+            border: none;
+            margin-bottom: 0.2em;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        .subcategory summary {
+            font-size: 1em;
+            font-weight: 500;
+            padding: 0.4em 0.5em;
+            background: none;
+            border-radius: 0;
+            color: #5a6c7a;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        }
+        .subcategory details[open] > summary {
+            background: none;
+            color: #3d4a56;
+        }
+        a {
+            color: #4b7fa5;
+            text-decoration: underline;
+            font-weight: 500;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        }
+        a:hover {
+            color: #2d4a62;
+        }
+        .note {
+            font-size: 0.97em;
+            margin-left: 0.5em;
+            font-style: italic;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        }
+        .label {
+            display: inline-block;
+            font-size: 0.92em;
+            font-weight: 600;
+            border-radius: 1em;
+            padding: 0.18em 0.85em;
+            margin-left: 0.5em;
+            vertical-align: middle;
+            letter-spacing: 0.5px;
+        }
+        .label-fraud {
+            background: #fde8e8;
+            color: #b91c1c;
+            border: 1px solid #f5c2c7;
+        }
+        .label-proven {
+            background: #e6f4ea;
+            color: #217a3a;
+            border: 1px solid #b7e4c7;
+        }
+        .label-dubious {
+            background: #fffbe6;
+            color: #b59f00;
+            border: 1px solid #f7e7a7;
+        }
+        @media (max-width: 600px) {
+            body { margin: 0.5em; }
+            h1 { font-size: 1.3em; }
+            summary { font-size: 1em; }
+            .subcategory { margin-left: 0.5em; padding-left: 0.5em; }
+        }
     </style>
 </head>
 <body>
-    <h1>Neuromodulation Devices & Methods</h1>
+    <h1>Consumer Neuromodulation Devices</h1>
 
     <details>
         <summary>Transcranial direct current stimulation (tDCS)</summary>
         <div class="subcategory">
             <details>
                 <summary>COGNITIVE</summary>
-                <div>The Brain Driver</div>
+                <div>The Brain Driver <span class="label label-fraud">FRAUDULENT</span><span class="note">no evidence of effectiveness</span></div>
                 <a href="https://thebraindriver.com/" target="_blank">https://thebraindriver.com/</a>
-                <span class="note">- FRAUDULENT, no evidence of effectiveness</span>
             </details>
             <details>
                 <summary>PHYSIOLOGICAL</summary>
-                <!-- No extra content -->
             </details>
             <details>
                 <summary>MOOD</summary>
-                <!-- No extra content -->
             </details>
             <details>
                 <summary>NEUROLOGICAL</summary>
-                <!-- No extra content -->
             </details>
         </div>
     </details>
@@ -75,12 +169,20 @@
     <details>
         <summary>Transcutaneous vagus nerve stimulator (tVNS, aVNS)</summary>
         <div class="subcategory">
-            <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
-            <details><summary>MOOD</summary></details>
-            <details><summary>NEUROLOGICAL</summary></details>
-            <details><summary>GammaCore</summary><span class="note">- PROVEN</span></details>
-            <details><summary>NEMOS</summary><span class="note">- PROVEN</span></details>
+            <details>
+                <summary>COGNITIVE</summary>
+            </details>
+            <details>
+                <summary>PHYSIOLOGICAL</summary>
+            </details>
+            <details>
+                <summary>MOOD</summary>
+            </details>
+            <details>
+                <summary>NEUROLOGICAL</summary>
+                <div>GammaCore <span class="label label-proven">PROVEN</span></div>
+                <div>NEMOS <span class="label label-proven">PROVEN</span></div>
+            </details>
         </div>
     </details>
 
@@ -129,11 +231,10 @@
         <summary>EEG + BCI</summary>
         <div class="subcategory">
             <details><summary>COGNITIVE</summary></details>
-            <details><summary>PHYSIOLOGICAL</summary></details>
             <details>
-                <summary>Ispsihand</summary>
+                <summary>PHYSIOLOGICAL</summary>
+                <div>Ispsihand <span class="label label-dubious">DUBIOUS</span></div>
                 <a href="https://www.neurolutions.com/get-ipsihand/" target="_blank">https://www.neurolutions.com/get-ipsihand/</a>
-                <span class="note">- DUBIOUS</span>
             </details>
             <details><summary>MOOD</summary></details>
             <details><summary>NEUROLOGICAL</summary></details>
