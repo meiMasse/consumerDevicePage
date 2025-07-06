@@ -131,18 +131,46 @@
             border: none;
             padding: 0;
         }
+        .main-title {
+            text-align: center;
+            color: #42526e;
+            font-size: 2.1em;
+            font-weight: 700;
+            margin-bottom: 0.3em;
+            letter-spacing: 0.5px;
+        }
+        .main-divider {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #b7cbe6 0%, #e3e6ea 100%);
+            margin: 0 auto 1.1em auto;
+            border-radius: 2px;
+        }
+        .main-description {
+            max-width: 700px;
+            margin: 0 auto 2em auto;
+            color: #6b7280;
+            font-size: 1.04em;
+            text-align: center;
+            line-height: 1.7;
+            font-weight: 400;
+        }
         @media (max-width: 600px) {
             body { margin: 0.5em; }
             h1 { font-size: 1.3em; }
             summary { font-size: 1em; }
             .subcategory { margin-left: 0.5em; padding-left: 0.5em; }
             .description { padding: 0.7em 0.7em; font-size: 0.98em; }
+            .main-title { font-size: 1.3em; }
+            .main-divider { width: 40px; height: 2px; }
+            .main-description { font-size: 0.98em; padding: 0 0.2em; }
         }
     </style>
 </head>
 <body>
-    <h1>Consumer Neuromodulation Devices</h1>
-    <div class="description-plain">
+    <h1 class="main-title">Consumer Neuromodulation Devices</h1>
+    <div class="main-divider"></div>
+    <div class="main-description">
         The devices' classification was made following the evaluation of its claims, supporting evidence and risk. It is based on 4 main criteria: <b>Imprecision</b> (Suggests uncertainty about the product), <b>Indirectness</b>, <b>Limitations of detailed design and execution</b> (Reduces confidence that the results reflect the true effect), and <b>Inconsistency</b> (trust), which are modified GRADE classification factors for evaluating quality of evidence.
     </div>
 
